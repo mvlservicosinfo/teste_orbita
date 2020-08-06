@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: darkgray;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body, img{
+    width: 100%;
+    height: 100%;
+}
+
+#titulo{
+  background-size: 100%;
+  background-color: aqua;
+  top:0px;  
+}
+
+#mesAno{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: medium;
+  color: blue;
+}
+
+#MegaUsado{
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+#vencimento{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#semana{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#valor{
+font-family: 'Courier New', Courier, monospace;
+}
+
+#EfeutarPgto{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#cpf{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#Byteconsumo{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#data{
+   font-family: 'Courier New', Courier, monospace;
+}
+
+#hora{
+   font-family: 'Courier New', Courier, monospace;
+}
+
+
+header{
+    width:20%;
+    background:#fff;
+    position: absolute;
+    left:0;
+    top:5%;
+    z-index: 5;
+}
+
+header h1{
+    text-align: center;
+}
+
+header li{
+   text-align: center;
+}
+
+nav ul{
+    list-style:none;
+    margin:5px 0;
+    padding:0;
+    background: rbga(0,0,0) transparent;
+}
+nav a{
+    display:block;
+    border:1px solid #e5e5e5;
+    border-left:0;
+    border-right:0;
+    margin:3px 0;
+    color:#333;
+    padding:5px 0;
+    text-decoration: none;
+    background: rbga(0,0,0) transparent;
+} 
+.box{
+    position:absolute;
+    top:5%;
+    right:10px;
+    width:70%;
+    height:70%;
+    background:#fff;
+}
+.box h2{
+    font-size:20px;
+    padding:10px;
+}
+.box p{
+    font-size:12px;
+    padding:10px;
+}
+.content{
+    min-width: 100%;
+    height: 98%;
+    position: absolute;
+    margin-left:-101%;
+    -webkit-transition: margin-left .8s ease-in-out;
+    -moz-transition: margin-left .8s ease-in-out;
+    -o-transition: margin-left .8s ease-in-out;
+    transition: margin-left .8s ease-in-out;
+    
+}
+.content:target{
+    margin-left:0;
+
+}
+#home{
+    margin-left:0;
+}
+
+.imagem{
+    background: rgba(0,0,0) transparent;
+}
+
+#home:target ~ header #link-home a,
+#conta:target ~ header #link-conta a,
+#consumo:target ~ header #link-consumo a{
+    background: rgba(0,0,0) transparent;
+    color: aqua;
+}
